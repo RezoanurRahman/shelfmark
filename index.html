@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f7f4ee" />
+    <meta
+      name="description"
+      content="Shelfmark is a calm personal reading log: track the books on your shelf, log reading sessions, follow your progress, and read the insights in your own habits."
+    />
+    <title>Shelfmark · A calm reading log</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c1917'/%3E%3Cpath d='M14 6h4a2 2 0 0 1 2 2v18l-4-4-4 4V8a2 2 0 0 1 2-2z' fill='%23e7c07b'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,500&amp;display=swap"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+      }
+
+      body {
+        background-color: #f7f4ee;
+        color: #221d17;
+        font-family:
+          'Inter',
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      .shelfmark-boot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-size: 0.95rem;
+        letter-spacing: 0.02em;
+        color: #6b6154;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <p class="shelfmark-boot">Opening your shelf…</p>
+    </div>
+    <noscript>Shelfmark needs JavaScript enabled to render your reading log.</noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
