@@ -1,9 +1,0 @@
-{
-  "name": "Shelfmark",
-  "slug": "shelfmark",
-  "summary": "A calm reading log for organizing a personal bookshelf, tracking reading sessions, and celebrating progress without noisy social metrics.",
-  "frontend": "Vue 3 + Vite",
-  "backend": "Express 5",
-  "storage": "in-memory",
-  "language": "typescript"
-}
