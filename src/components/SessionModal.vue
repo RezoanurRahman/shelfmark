@@ -67,8 +67,9 @@ function clearError(field: keyof FieldErrors): void {
   errors[field] = undefined;
 }
 
-function parsePositiveInteger(value: string): number | null {
-  const raw = value.trim();
+function parsePositiveInteger(value: unknown): number | null {
+  if (typeof value !== 'string' && typeof value !== 'number') return null;
+  const raw = String(value).trim();
   if (!/^\d+$/.test(raw)) return null;
   const parsed = Number(raw);
   return Number.isSafeInteger(parsed) && parsed > 0 ? parsed : null;
