@@ -46,7 +46,7 @@ is presented as a page count and a streak of days, never as a leaderboard.
 ## Quick start
 
 ```bash
-git clone https://github.com/your-username/shelfmark.git
+git clone https://github.com/RezoanurRahman/shelfmark.git
 cd shelfmark
 npm install && npm run dev
 ```
